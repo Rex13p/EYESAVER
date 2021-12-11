@@ -1,0 +1,162 @@
+<html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- this called inner css you have choice if you want to do css file or jus include it on inner css -->
+        <!-- note using the css: to design the html you need to put ID or CLASS to identify which tag you want to design. 
+            CLASS is more like general you can put same class on many html tags that you want the same desing. ID is more on one is one design
+        you can only use it on single tags -->
+        <style>
+            body {
+            font-family: "Lato", sans-serif;
+            padding:0;
+            margin: 0;
+            }
+
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            }
+
+            .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+            color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            }
+
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
+
+            .content {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 20px;
+            }
+
+            #content {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 30px;
+            }
+            .content-header{
+                width: 100%;
+                height: 50px;
+                background-color: black;
+                color:white;
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+            .nav{
+                color: white;
+                width: 100%;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+
+<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="INTRO.html">Introduction</a>
+            <a href="DETAIL.html">Details of the product</a>
+            <a href="PARTS1.html">Parts of the product</a>
+            <a href="PATENT.html">Patent Page</a>
+            
+            <a href="ABOUTME.html">About the Creator</a>
+        </div>
+        <div class="nav">
+             <span style="font-size:30px;cursor:pointer;margin-left: 10px;" onclick="openNav()">&#9776; EYESAVER</span>
+        </div>
+
+        <!-- this is javascript function to navigate the side bar. -->
+        <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+	<center>
+	<div class="col-md-10 col-sm-12 col-xs-12 content">
+           	 <main id="main-doc">
+                <section class="main-section" id="detail3" >
+                 <div class = "content-header">
+                    <h3 style = "background: black; color: white">Parts of the product</h3>
+                    </div>
+	<div id = "content">
+	<article>
+
+	<p>
+	<center>
+	<table>
+	<table border =1>
+	
+	<tr><td colspan = 1 bgcolor=orange><a href= "PART-1.html">
+	<strong><font size = 6 color = white>1 LENS</td></a>
+	
+	<td colspan = 1 bgcolor=black><a href= "PART-1.html"><strong>
+	<font size = 6 color = white>2 TEMPLES</td></a>
+
+	<td colspan = 1 bgcolor=orange><a href= "PART-1.html">
+	<strong><font size = 6 color = white>3 SCREW</td></a>
+	</tr>
+	
+
+	<tr><td colspan = 1 align=center bgcolor=black><a href = "PART-2.html">
+	<strong><font size =6 color = white>4 PADS</td></a>
+
+	<td colspan = 1 bgcolor=orange><a href = "PART-2.html"><strong>
+	<font size= 6 color =white>5 BRIDGE</td></a>
+	
+	<td coslpan = 1 bgcolor = black><a href = "PART-2.html">
+	<strong><font size = 6 color = white>6 RIMS</td></a>
+	</font>
+	</table>
+	</tr>
+	
+	<p>
+	<img src = "parts.jpg" width = 500>
+
+
+	
+</center>
+</div>
+</article>
+</table>
+
+
+
+
+
+
+
+
+</html>
